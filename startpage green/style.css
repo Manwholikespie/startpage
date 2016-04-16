@@ -1,0 +1,48 @@
+@font-face {
+font-family: source-sans;
+src: url('SourceSansPro-Regular.otf')
+}
+
+@font-face {
+font-family: playfair;
+src: url('PlayfairDisplay-Black.otf')
+}
+
+
+body {
+background: #2e4345;
+color: #aaaaaa;
+font-family: 'source-sans', sans-serif;
+font-size: 10pt;
+}
+
+a {
+color: #82a88e;
+text-decoration: none;
+}
+
+a:hover {
+color: #DBA48A
+}
+
+h1 {
+font-family: 'playfair', serif;
+font-size: 30pt;
+font-weight: normal;
+margin-top: -18px;
+margin-bottom: 24px;
+}
+
+.links {
+color: #3f3f3f;
+}
+
+#body {
+max-width: 434px;
+max-height: 300px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -150px;
+margin-left: -217px;
+}
