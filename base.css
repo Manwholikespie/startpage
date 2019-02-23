@@ -1,0 +1,35 @@
+body {
+  font-family: "Graphik", Helvetica, Arial, sans-serif;
+  font-family: 'source-sans', sans-serif;
+  font-size: 10pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30pt;
+  font-weight: bold;
+  margin-top: -18px;
+  margin-bottom: 24px;
+  margin-left: 10px;
+}
+
+th {
+  text-align: left;
+}
+
+tr {
+  margin-bottom: 10px;
+}
+
+#body {
+  max-width: 434px;
+  max-height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -217px;
+}

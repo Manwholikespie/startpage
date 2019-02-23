@@ -1,11 +1,14 @@
 # MWLP's Startpage
+
 ## Screenshots
+### Purp
+![purp](examples/purp.png)
 ### Mars
 ![mars](examples/mars.png)
 ### Cream
 ![cream](examples/cream.png)
 ### Green
-![green](examples/green.png)
+![green](examples/pine.png)
 
 ## Special Thanks
 to the guy on /g/ for originally creating it.  
