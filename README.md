@@ -7,9 +7,9 @@
 ![mars](examples/mars.png)
 ### Cream
 ![cream](examples/cream.png)
-### Green
-![green](examples/pine.png)
+### Pine
+![pine](examples/pine.png)
 
 ## Special Thanks
-to the guy on /g/ for originally creating it.  
-to Kevin on /g/ for liking it enough to use it as his own startpage.
+- to the guy on /g/ for originally creating it.  
+- to Kevin on /g/ for stealing my mars color scheme.
