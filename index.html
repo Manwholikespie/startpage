@@ -14,78 +14,27 @@
 
 <body>
 
-  <div id="body">
+  <div id="main">
     <h1>Welcome.</h1>
     <table cellspacing="10">
       <tbody>
-        <tr>
-          <th context="row">UNI</th>
+        <tr v-for="section in sections">
+          <th context="row">{{ section.name }}</th>
           <td>
-            [ <a href='https://ecampus.tamu.edu'>ecampus</a> /
-            <a href='https://docs.google.com'>google_docs</a> ]
-          </td>
-        </tr>
-
-        <tr>
-          <th context="row">NEWS</th>
-          <td>
-            [ <a href='https://news.ycombinator.com'>hacker_news</a> /
-            <a href='https://fivethirtyeight.com'>538</a> ]
-          </td>
-        </tr>
-
-        <tr>
-          <th context="row">SOCIAL</th>
-          <td>
-            [ <a href='https://twitter.com'>twitter</a> /
-            <a href='https://instagram.com'>instagram</a> ]
-          </td>
-        </tr>
-
-        <tr>
-          <th context="row">MEDIA</th>
-          <td>
-            [ <a href='https://plex.robertism.com'>plex</a> /
-            <a href='https://netflix.com'>netflix</a> ]
-          </td>
-        </tr>
-
-        <tr>
-          <th context="row">CODE</th>
-          <td>
-            [ <a href='https://github.com'>github</a> /
-            <a href='https://github.com'>gitlab</a> /
-            <a href='https://hexdocs.pm/elixir/Kernel.html'>elixir</a> ]
-          </td>
-        </tr>
-
-        <tr>
-          <th context="row">MUSIC</th>
-          <td>
-            [ <a href='https://soundcloud.com/stream'>scloud</a> /
-            <a href='https://www.reddit.com/r/electronicmusic'>chiru.no</a> /
-            <a href='https://fpgaminer.github.io/vip-html5-player/#Mellow'>mellow</a> ]
-          </td>
-        </tr>
-
-        <tr>
-          <th context="row">"FREE"</th>
-          <td>
-            [ <a href='https://iptorrents.com'>iptorrents</a> /
-            <a href='https://dl.robertism.com'>dl</a> /
-            <a href='books.html'>books</a> ]
-          </td>
-        </tr>
-
-        <tr>
-          <th context="row">CHANS</th>
-          <td>
-            [ <a href='https://boards.4channel.org/g/'>g</a> /
-            <a href='https://boards.4chan.org/f/'>f</a> /
-            <a href='https://boards.4channel.org/mu/'>mu</a> ]
+            [
+            <span v-for="(site, index) in section.sites">
+              <a :href="site.url">{{ site.name }}</a>
+              <span v-if="index == section.sites.length - 1">]</span>
+              <span v-else>/ </span>
+            </span>
+            
           </td>
         </tr>
       </tbody>
     </table>
   </div>
+
+  <script src="resources/vue.js"></script>
+  <script src="app.js"></script>
+
 </body>
